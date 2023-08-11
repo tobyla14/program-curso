@@ -1,0 +1,70 @@
+body{ /*voy a darle propiedades a mi body*/
+ display: grid;
+ grid-template-areas: 
+ "header header"
+ "main main"
+ "footer footer"
+ ;
+ grid-template-rows:25%  1fr  10%;
+ grid-template-columns:1fr 1fr ;
+ margin: 0% auto;
+ text-align: center;
+ height: 100vh;
+}
+.divheader{
+           grid-area:  header;
+           background-color: aqua;
+}
+.divmain{
+            grid-area: main;
+            
+}
+.divfooter{
+            grid-area: footer;
+            background-color: blueviolet;
+            color: white;
+
+}
+
+h1{
+    /*cambio de la fuente*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.4em;
+}
+/*cadena - llamada por cola, entramos a nav y trabajamos oslo por ul*/
+nav ul{
+    display: flex;
+    flex: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.5em;
+}
+
+a{
+    /*le quitamos la decoracion de abajo a mis elementos tipo link*/
+    text-decoration: none;
+}
+
+.divmain{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    justify-items: center;
+    background-image: linear-gradient(to left, blue, rgba(5, 232, 5, 0.867));
+}
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.card img{
+    width: 280px;
+    /*imagenes de diferentes tamaños*/
+    aspect-ratio: 16/9; /*aspectos de estirados*/
+    object-fit: contain;
+}
