@@ -1,0 +1,31 @@
+/* para seleccionar una clase utilizamos el . */
+.contenedor3{
+    background-color: green;
+}
+.contenedor{
+    background-color: yellow;
+    /*agregar bordes*/
+    border: 3px solid gray;
+    /* centrar text*/
+    text-align: center;
+    /*estilo de texto*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /*tamaño de text*/
+    font-size: 50px;
+    /*colores de texto*/
+    color: white;
+    /*bordes al texto*/
+    -webkit-text-stroke: 1px black;
+    text-shadow: -2px 1px 0 black;
+
+    /*separaciones: 
+    podemos separar el contenido del borde y los elementos entre si*/
+
+   /* separ el contenido de sus bordes*/
+   padding: 5px 3px 10px 10px;
+
+   /*para separar el contenido con respecto a otros elementos*/
+   margin: 5px 15px 10px 10px; /*arriba, derecha, abajo, izuierda*/
+
+
+}
