@@ -1,0 +1,176 @@
+:root{
+    --primero{ rgb:#762828;}
+    --secundario{ rgb:#170808}
+    --blanco: white;
+    --gris: #A7a5a5 ;
+    --negro: black;
+    -fuentetitulo: 'DM Sans', sans-serif;
+    --fuenteparrafo: 'Rozha One', serif ;
+}
+
+.div-test{
+    background-color: var(--gris);
+    font-family: var(--fuenteparrafo);
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.8rem;
+    line-height: 2;
+}
+
+
+h1,h2,h3,h4,h5{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    line-height: 1.5;
+    -webkit-text-stroke:1px black;
+}
+
+h1{font-size: 5rem;}
+h2{font-size: 4.2;}
+h3{font-size: 3.4;}
+h4{font-size: 2.6;}
+
+
+
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+.contenedor{
+    width: min(90%,120rem);
+    margin: 0px auto;
+}
+
+.no-margin{
+   margin: 0px;
+}
+
+.no-padding{
+ padding: 0;
+}
+
+.text-center{
+ text-align: center;
+}
+
+.header{
+    background-image: url(/img/fondo.cafe.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 60rem;
+    background-repeat: no-repeat;
+}
+
+.barra{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navegacion{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.textos-header{
+    text-align: center;
+    color: white;
+    margin-top: 15rem;
+}
+
+.text-nav{
+ color: white;
+  font-weight: 800;
+}
+
+.letra-bold{
+    font-weight: 100;
+}
+
+
+.footer{
+    background-color: var(--negro);
+    padding: 2.5rem 0;
+}
+
+.imgblog{
+    width: 60rem;
+    aspect-ratio: 16/9;
+}
+
+.textblog{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+
+.boton{
+    display:inline-block;
+    background-color: var(--negro);
+    color: white;
+    font-size: 2.5rem;
+    padding: 1rem 3rem;
+    font-weight: 700;
+}
+
+.boton-secundario{
+    background-color: violet;
+    color: white;
+}
+
+li{
+    list-style: none;
+}
+
+.parrafoli{
+    font-weight: 100;
+}
+
+.contenedor-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.textabout{
+    font-weight: 900;
+    font-size: 2rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.sobre-nosotros{
+    display: flex;
+    display: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+.cursos-info{
+display: grid;
+grid-template-columns: 1.5fr 1fr;
+gap: 2rem;
+margin: 1px;
+}
+
+.imgcurso{
+ display: grid;
+ width: 40rem;
+ justify-content: center;
+ align-items: center;
+}
