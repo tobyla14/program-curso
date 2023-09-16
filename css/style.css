@@ -1,46 +1,47 @@
 :root{
-    --primero{ rgb:#762828;}
-    --secundario{ rgb:#170808}
+    --primario: rgb(#476ed1);
+    --secundario: rgb(#0b152d);
     --blanco: white;
-    --gris: #A7a5a5 ;
     --negro: black;
-    -fuentetitulo: 'DM Sans', sans-serif;
-    --fuenteparrafo: 'Rozha One', serif ;
-}
 
-.div-test{
-    background-color: var(--gris);
-    font-family: var(--fuenteparrafo);
+    --fuentedetitulo: 'Oswald', sans-serif;
+    --fuenteparrafo: 'Inconsolata', monospace;
 }
 
 html{
     box-sizing: border-box;
     font-size: 62.5%;
 }
-
 *,*::after,*::before{
     box-sizing: inherit;
 }
 
 body{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--fuenteparrafo);
     font-size: 1.8rem;
     line-height: 2;
 }
 
 
-h1,h2,h3,h4,h5{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
-    line-height: 1.5;
-    -webkit-text-stroke:1px black;
+h1{
+    font-family: var(--fuentedetitulo);
+    color: var(--blanco);
+    line-height: 1.2;
 }
 
-h1{font-size: 5rem;}
-h2{font-size: 4.2;}
-h3{font-size: 3.4;}
-h4{font-size: 2.6;}
+h2{
+    font-family: var(--fuentedetitulo);
+    color: var(--negro);
+    line-height: 1.2;
+    
+   
+}
 
+h3{
+    font-family: var(--fuentedetitulo);
+    color: var(--negro);
+    line-height: 1.2;
+}
 
 
 
@@ -54,123 +55,144 @@ img{
 
 .contenedor{
     width: min(90%,120rem);
-    margin: 0px auto;
+    margin: 0,auto;
 }
 
 .no-margin{
-   margin: 0px;
+    margin: 0;
 }
 
-.no-padding{
- padding: 0;
+.padding{
+    padding: 0;
 }
 
-.text-center{
- text-align: center;
+.center-text{
+    text-align: center;
 }
 
 .header{
-    background-image: url(/img/fondo.cafe.jpg);
-    background-size: cover;
-    background-position: center center;
+    background-image: url(/img/botines\ de\ Maradona.webp);
     height: 60rem;
+    background-size: cover;
+    background-position: center center ;
     background-repeat: no-repeat;
 }
 
 .barra{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+align-items: center;
+justify-content: space-around;
 }
 
 .navegacion{
-    display: flex;
-    gap: 1.5rem;
+ display: flex;
+ gap: 1.5rem;
 }
 
-.textos-header{
+.navegacion-enlaces{
+ color: var(--blanco);
+ font-weight: 800;
+ text-decoration: none;
+}
+
+.textoheader{
     text-align: center;
-    color: white;
-    margin-top: 15rem;
+    color: var(--blanco);
+    margin-top: 6rem;
 }
 
-.text-nav{
- color: white;
-  font-weight: 800;
+.letrabold{
+    font-weight: bolder;
 }
-
-.letra-bold{
-    font-weight: 100;
-}
-
 
 .footer{
     background-color: var(--negro);
-    padding: 2.5rem 0;
+    padding: 2rem 0;
 }
 
-.imgblog{
-    width: 60rem;
-    aspect-ratio: 16/9;
+.imgtienda{
+width: 30rem;
 }
 
-.textblog{
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 700;
+.texmain{
+    font-family: var(--fuenteparrafo);
+    font-size: 1.5rem;
 }
 
 .boton{
-    display:inline-block;
+    display: inline-block;
     background-color: var(--negro);
-    color: white;
-    font-size: 2.5rem;
-    padding: 1rem 3rem;
-    font-weight: 700;
-}
-
-.boton-secundario{
-    background-color: violet;
-    color: white;
-}
-
-li{
-    list-style: none;
-}
-
-.parrafoli{
-    font-weight: 100;
-}
-
-.contenedor-main{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-}
-
-.textabout{
-    font-weight: 900;
+    color: var(--blanco);
     font-size: 2rem;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    padding: 1rem 3rem;
+    font-weight: 800;
 }
 
-.sobre-nosotros{
+
+.Formulario{
+    margin: -3rem auto 0 auto;
+    font-size: 2rem;
+    width: 95%;
+    padding: 5rem;
+}
+
+.campo{
     display: flex;
-    display: nowrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 2.5rem;
-}
-.cursos-info{
-display: grid;
-grid-template-columns: 1.5fr 1fr;
-gap: 2rem;
-margin: 1px;
+    margin-bottom: 2rem;
 }
 
-.imgcurso{
- display: grid;
- width: 40rem;
- justify-content: center;
- align-items: center;
+.camp-label{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: right;
+    flex: 0 0 9rem;
+    padding-right: 2rem;
+}
+
+.camp-input{
+    flex: 1;
+    border-radius: 4px;
+    border: 1px solid var(--negro);
+}
+
+.camp-textarea{
+    flex: 1;
+    height: 25rem;
+}
+
+
+@keyframes desvanecer{
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
+
+#Desvanecer-comp:hover{
+    cursor: crosshair;
+    animation-name: desvanecer;
+    animation-duration: 3s;
+}
+
+@keyframes rotar-colores{
+    0%{background-color: blue;}
+    25%{background-color: aqua;}
+    50%{background-color: chartreuse;}
+    75%{background-color: gold;}
+    100%{background-color: lemonchiffon;}
+}
+#animation-fondo:hover {
+    cursor: pointer;
+   animation-name: rotarcolores;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+}
+
+@keyframes girar{
+    to{transform: rotate(0);}
+    from{transform: rotate(360);}
+}
+
+#animaciongirar{
+    cursor: pointer;
+    animation-name: girar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
